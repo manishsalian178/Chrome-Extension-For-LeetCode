@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode Chatbot",
+  "version": "1.0",
+  "description": "Chatbot injected into LeetCode problem pages.",
+  "icons": {
+    "16": "assets/icon16.png"
+  },
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/problems/*"],
+      "js": ["contentScript.js"],
+      "css": ["chatbot.css"]
+    }
+  ]
+}
